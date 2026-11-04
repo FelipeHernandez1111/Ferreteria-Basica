@@ -12,7 +12,6 @@ Docente: Felipe Gutiérrez Isaza
 | Jhohan Vasquez               | Responsable de código   |
 | Juan Felipe Hernandez Pinzon | Responsable de modelado |
 
-> Completar con los nombres reales. En equipos de dos integrantes, uno asume dos roles.
 
 ## Tipo de tienda
 
