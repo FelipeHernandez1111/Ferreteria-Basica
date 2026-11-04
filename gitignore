@@ -1,0 +1,25 @@
+# Ejecutables y objetos
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+*.dll
+v0/tienda_v0
+v1/tienda_v1
+
+# Temporales y de IDE
+*.tmp
+*.log
+*~
+.vscode/
+.idea/
+*.cbp
+*.layout
+*.depend
+bin/
+obj/
+build/
+.DS_Store
+Thumbs.db
