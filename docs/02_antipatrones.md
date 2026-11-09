@@ -1,0 +1,27 @@
+INFORME ANTIPATRONES Y OLORES DEL CODIGO - Versión 0
+
+1. Antipatrón: Clase "Dios" (God Object)
+- Ubicación:
+Archivo `v0/tienda_v0.cpp`, clase `Tienda` (líneas 19 a 323).
+- Problema que causa:
+La clase `Tienda` centraliza absolutamente todas las responsabilidades del sistema:
+administra vectores de productos, procesa las entradas/salidas de consola, efectúa cálculos matemáticos de impuestos, 
+aplica reglas de pago y ejecuta el control de stock mínimo. 
+Esto viola el principio de responsabilidad única (SRP), haciendo que el código sea rígido,
+complejo de mantener y propenso a errores ante cualquier cambio.
+
+2. Antipatrón: Sentencias condicionales múltiples / Switch por Tipo
+- Ubicación:
+Archivo `v0/tienda_v0.cpp`, método `registrarVenta()` (líneas 122 a 129).
+- Problema que causa:
+El uso de una estructura `switch` basada en el atributo `p.tipo` para calcular impuestos y recargos
+(productos normales, a granel y herramientas con garantía) viola el principio Abierto/Cerrado (OCP).
+Si la ferretería decide incorporar un nuevo tipo de producto, será obligatorio modificar directamente el código fuente de esta función.
+
+3. Antipatrón: Números Mágicos y Lógica Acoplada de Pagos
+- Ubicación:
+Archivo `v0/tienda_v0.cpp`, método `registrarVenta()` (líneas 122-129 y 141-151).
+- Problema que causa:
+Existen valores literales quemados en el código (`0.19` para IVA, `5000.0` para garantía,
+`0.03` para descuento de tarjeta y `800.0` para pasarela) y reglas de pago mezcladas dentro de la venta.
+Esto oculta la semántica de las reglas de negocio y duplica la lógica si se requiere aplicar cotizaciones o facturas en otros módulos.
