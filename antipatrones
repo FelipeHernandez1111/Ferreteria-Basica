@@ -1,5 +1,5 @@
 
-```markdown
+``` markdown
 # Informe de Antipatrones y Olores de Código - Versión 0
 
 ## 1. Antipatrón: Clase "Dios" (God Object)
