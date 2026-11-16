@@ -1,0 +1,29 @@
+                  INVENTARIO ACTUAL (F2)
+=================================================================
+CODIGO    NOMBRE                   PRECIO ($)     STOCK
+-----------------------------------------------------------------
+P001      Tornillo_3_pulgadas      250.00         100
+P002      Cable_Electrico_Metro    1800.00        50
+P003      Taladro_Percutor_750W    185000.00      4
+P004      Martillo_Ua              25000.00       12
+=================================================================
+
+Ingrese codigo del producto a vender: P001
+Ingrese la cantidad a comprar: 50
+
+Seleccione la forma de pago:
+  1. Efectivo
+  2. Tarjeta Debito/Credito
+  3. Transferencia Bancaria
+Opcion de pago: 1
+
+---------------- FACTURA DE VENTA V1 ----------------
+Producto      : Tornillo_3_pulgadas
+Cantidad      : 50
+Subtotal      : $12500.00
+Impuestos/Gar : $2375.00
+Descuentos    : -$0.00
+Recargos      : +$0.00
+TOTAL A PAGAR : $14875.00
+-----------------------------------------------------
+[EXITO] Transaccion procesada exitosamente con patrones.
